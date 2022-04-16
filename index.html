@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>input function</title>
+        <link rel="stylesheet"href="index.css">
+    </head>
+    <body>
+        <div class="container">
+          <div class="box">  
+              <div class="inputs">
+
+              <label class="text">Enter your name </label>
+                  <input type="text" id="mytext"/>
+                </div>
+                      <button onclick="myfunction()">submit</button>
+          </div>
+          <h1 id="message"></h1>
+
+        </div>
+        <script>
+         function myfunction(){
+             let mytext = document.querySelector("#mytext")
+             let message = document.querySelector("#message")
+
+             message.innerHTML ="welcome to my webpage, " + mytext.value
+
+         }
+        </script>
+    </body>
+</html>
